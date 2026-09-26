@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+runs/*
+!runs/.gitkeep
+yolov8n.pt
+.env
+.venv/
+env/
+venv/

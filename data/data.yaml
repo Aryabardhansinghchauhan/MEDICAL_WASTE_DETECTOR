@@ -1,0 +1,16 @@
+# Fallback dataset configuration for Medical Waste Detector.
+# The detector attempts to read class names from model.names first.
+# If not present in the .pt model file, it uses names from this data.yaml.
+
+path: .
+train: images/train
+val: images/val
+
+names:
+  0: syringe
+  1: glove
+  2: mask
+  3: sharp
+  4: biohazard_bag
+  5: bottle
+  6: scissors

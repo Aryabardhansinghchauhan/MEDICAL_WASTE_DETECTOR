@@ -1,0 +1,68 @@
+# Medical-waste mapping used by the application.
+#
+# IMPORTANT:
+# This is a project template, not a legal classification table.
+# Check every category against your hospital SOP and applicable rules.
+#
+# Class names must match the YOLO model names.
+#
+# Unknown model classes automatically become:
+#   category: REVIEW
+#   requires_review: true
+
+version: 1
+
+mappings:
+  syringe:
+    category: WHITE
+    label: "Sharps / syringe"
+    requires_review: true
+    review_reason: "Verify local SOP before disposal"
+
+  sharp:
+    category: WHITE
+    label: "Sharps"
+    requires_review: true
+    review_reason: "Verify local SOP before disposal"
+
+  needle:
+    category: WHITE
+    label: "Sharps / needle"
+    requires_review: true
+    review_reason: "Verify local SOP before disposal"
+
+  glove:
+    category: RED
+    label: "Contaminated plastic"
+    requires_review: true
+    review_reason: "Verify contamination and local SOP"
+
+  gloves:
+    category: RED
+    label: "Contaminated plastic"
+    requires_review: true
+    review_reason: "Verify contamination and local SOP"
+
+  mask:
+    category: REVIEW
+    label: "Manual verification"
+    requires_review: true
+    review_reason: "Visual appearance alone may not determine disposal category"
+
+  biohazard_bag:
+    category: REVIEW
+    label: "Manual verification"
+    requires_review: true
+    review_reason: "Verify contents and local SOP"
+
+  bottle:
+    category: BLUE
+    label: "Glassware / Plastic bottle"
+    requires_review: true
+    review_reason: "Verify contamination status"
+
+  scissors:
+    category: WHITE
+    label: "Sharps / Metal instrument"
+    requires_review: true
+    review_reason: "Verify sterilization requirement"
